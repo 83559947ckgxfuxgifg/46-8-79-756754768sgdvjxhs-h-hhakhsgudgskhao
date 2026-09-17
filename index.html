@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🦄 My Bluesky Feed</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0f;
+    color: #e8e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.4rem;
+    color: #a78bfa;
+  }
+  .post {
+    background: #16161f;
+    border: 1px solid #2a2a3f;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #2a2a3f;
+  }
+  .author-info { flex: 1; }
+  .author-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #e8e8f0;
+  }
+  .author-handle {
+    font-size: 0.8rem;
+    color: #6b6b8a;
+  }
+  .post-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  .post-video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  .post-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: #6b6b8a;
+    margin-top: 8px;
+  }
+  .time { margin-left: auto; }
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #6b6b8a;
+  }
+  .search {
+    width: 100%;
+    padding: 10px 14px;
+    background: #16161f;
+    border: 1px solid #2a2a3f;
+    border-radius: 8px;
+    color: #e8e8f0;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    outline: none;
+  }
+  .search:focus { border-color: #a78bfa; }
+  .stats {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6b6b8a;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+<h1>🦄 My Bluesky Feed</h1>
+<input class="search" type="text" placeholder="Search posts..." id="search">
+<div class="stats" id="stats"></div>
+<div id="feed"><div class="loading">Loading your feed...</div></div>
+
+<script>
+let allPosts = [];
+
+function timeAgo(dateStr) {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const mins = Math.floor(diff / 60000);
+  const hours = Math.floor(mins / 60);
+  const days = Math.floor(hours / 24);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return `${mins}m ago`;
+  if (hours < 24) return `${hours}h ago`;
+  return `${days}d ago`;
+}
+
+function renderPosts(posts) {
+  const feed = document.getElementById('feed');
+  if (posts.length === 0) {
+    feed.innerHTML = '<div class="loading">No posts found</div>';
+    return;
+  }
+  feed.innerHTML = posts.slice(0, 200).map(p => `
+    <div class="post">
+      <div class="author">
+        ${p.author_avatar
+          ? `<img class="avatar" src="${p.author_avatar}" onerror="this.style.display='none'">`
+          : '<div class="avatar"></div>'}
+        <div class="author-info">
+          <div class="author-name">${p.author_name || p.author_handle}</div>
+          <div class="author-handle">@${p.author_handle}</div>
+        </div>
+      </div>
+      ${p.text ? `<div class="post-text">${p.text}</div>` : ''}
+      ${p.images && p.images.length > 0
+        ? p.images.map(img => `<img class="post-image" src="${img}" loading="lazy">`).join('')
+        : ''}
+      ${p.video_url
+        ? `<video class="post-video" controls><source src="${p.video_url}"></video>`
+        : ''}
+      <div class="post-meta">
+        <span>❤️ ${p.like_count || 0}</span>
+        <span>🔁 ${p.repost_count || 0}</span>
+        <span class="time">${timeAgo(p.created_at)}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+document.getElementById('search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  const filtered = allPosts.filter(p =>
+    (p.text || '').toLowerCase().includes(q) ||
+    (p.author_name || '').toLowerCase().includes(q) ||
+    (p.author_handle || '').toLowerCase().includes(q)
+  );
+  renderPosts(filtered);
+});
+
+fetch('feed_data.json')
+  .then(r => r.json())
+  .then(data => {
+    allPosts = data;
+    document.getElementById('stats').textContent = `${data.length} posts saved`;
+    renderPosts(data);
+  })
+  .catch(() => {
+    document.getElementById('feed').innerHTML =
+      '<div class="loading">Could not load feed. Try again soon!</div>';
+  });
+</script>
+</body>
+</html>
