@@ -1,5 +1,55 @@
 [
   {
+    "uri": "at://did:plc:2d5tigfjv3z4zxadq7z3vcoe/app.bsky.feed.post/3mwi7s57i622e",
+    "author_handle": "pupnik.moe",
+    "author_name": "bran \ud83d\udc7d",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2d5tigfjv3z4zxadq7z3vcoe/bafkreieg56cnel7aqpcnsaevtryg2noewujr6tz3lrxubyfpl6jdhty7qy",
+    "text": "e1 presented a decent amount of challenges for me but i think e2 felt a bit easier because of how well everything was laid out. by the time you're at e2 i feel like you're very in tune with how the game operates so it feels easier... but even saying that: i accused the wrong person LMAO",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-09-27T06:55:43.697Z",
+    "like_count": 0,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:2d5tigfjv3z4zxadq7z3vcoe/app.bsky.feed.post/3mwi7nge5kk2e",
+    "author_handle": "pupnik.moe",
+    "author_name": "bran \ud83d\udc7d",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2d5tigfjv3z4zxadq7z3vcoe/bafkreieg56cnel7aqpcnsaevtryg2noewujr6tz3lrxubyfpl6jdhty7qy",
+    "text": "YAAAYYY!!! ENJOY :D say hi to morg for me",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-09-27T06:53:05.514Z",
+    "like_count": 1,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mwi7mjq52k2t",
+    "author_handle": "brantopia.bsky.social",
+    "author_name": "\u200dbran",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreia5v43xprfa3hjfqtf64jozmusbt645ad2gyh55iepku3pkmjo444",
+    "text": "in hindsight i honestly should have thought of this sooner given they literally say in e2 that morgan only \"recently\" moved to the city lol",
+    "images": [
+      "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreia7b6tkpkkksdpk34ph6ct7bmdta4duunwk4wglrd3pqmn4xq3ktm"
+    ],
+    "video_url": null,
+    "created_at": "2026-09-27T06:52:35.498Z",
+    "like_count": 4,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mwi7i7couk2t",
+    "author_handle": "brantopia.bsky.social",
+    "author_name": "\u200dbran",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreia5v43xprfa3hjfqtf64jozmusbt645ad2gyh55iepku3pkmjo444",
+    "text": "had a friend from philly tell me that some term they use to refer to the city is very \"philly only\"... this is why its important to force everyone i know to play of the devil. i know there's no canon location but perhaps the tech is morgan is from boston (BIT = MIT) -> city is philly",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-09-27T06:50:10.354Z",
+    "like_count": 4,
+    "repost_count": 0
+  },
+  {
     "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mwi4imbirc2k",
     "author_handle": "brantopia.bsky.social",
     "author_name": "\u200dbran",
