@@ -1,5 +1,29 @@
 [
   {
+    "uri": "at://did:plc:2d5tigfjv3z4zxadq7z3vcoe/app.bsky.feed.post/3mwu3t4tevs2u",
+    "author_handle": "pupnik.moe",
+    "author_name": "bran \ud83d\udc7d",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2d5tigfjv3z4zxadq7z3vcoe/bafkreieg56cnel7aqpcnsaevtryg2noewujr6tz3lrxubyfpl6jdhty7qy",
+    "text": "that's the only thing i could think of to compare it to price wise",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-10-02T00:16:38.748Z",
+    "like_count": 1,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:2d5tigfjv3z4zxadq7z3vcoe/app.bsky.feed.post/3mwu3pp6xes2u",
+    "author_handle": "pupnik.moe",
+    "author_name": "bran \ud83d\udc7d",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2d5tigfjv3z4zxadq7z3vcoe/bafkreieg56cnel7aqpcnsaevtryg2noewujr6tz3lrxubyfpl6jdhty7qy",
+    "text": "get both episodes of my favorite game for less than the cost of a single entree or pancake stack from IHOP \ud83e\udd5e\ud83e\uddc7\u2615\ufe0f",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-10-02T00:14:43.778Z",
+    "like_count": 5,
+    "repost_count": 1
+  },
+  {
     "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mwtxdu73uk2i",
     "author_handle": "brantopia.bsky.social",
     "author_name": "\u200dbran",
