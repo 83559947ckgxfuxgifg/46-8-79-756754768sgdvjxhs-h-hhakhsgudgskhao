@@ -1,5 +1,69 @@
 [
   {
+    "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mxulpforzc2i",
+    "author_handle": "brantopia.bsky.social",
+    "author_name": "\u200dbran",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreiackmxbufvtb3lq7krxt4hkqm7aomuerbt6guuhmov4keyqzxzkfy",
+    "text": "some people think it's stupidly straight forward. other people think it's really nuanced. its really interesting to see what people say when you ask",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-10-14T22:26:05.314Z",
+    "like_count": 6,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mxuljxvlz22i",
+    "author_handle": "brantopia.bsky.social",
+    "author_name": "\u200dbran",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreiackmxbufvtb3lq7krxt4hkqm7aomuerbt6guuhmov4keyqzxzkfy",
+    "text": "watching the of the devil discord descend into chaos over the question \"is serra an ai\"",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-10-14T22:23:03.079Z",
+    "like_count": 10,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mxulbqfa322v",
+    "author_handle": "brantopia.bsky.social",
+    "author_name": "\u200dbran",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreiackmxbufvtb3lq7krxt4hkqm7aomuerbt6guuhmov4keyqzxzkfy",
+    "text": "testimonial from my boyfriend. and it's absolutely true",
+    "images": [
+      "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreic33ygk43mohu5u2pj562t3k5szq2mezju5t7vusxb7f4ilumb3ua"
+    ],
+    "video_url": null,
+    "created_at": "2026-10-14T22:18:26.771Z",
+    "like_count": 13,
+    "repost_count": 0
+  },
+  {
+    "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mxukxgrvgc2v",
+    "author_handle": "brantopia.bsky.social",
+    "author_name": "\u200dbran",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreiackmxbufvtb3lq7krxt4hkqm7aomuerbt6guuhmov4keyqzxzkfy",
+    "text": "",
+    "images": [
+      "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:f3sxv6f7a2sztbqw5m3rro3o/bafkreihzfveoswec3gnp6nli7pzd5ic353hsn3jver5qtz7ahuyyr5qcam"
+    ],
+    "video_url": null,
+    "created_at": "2026-10-14T22:12:41.154Z",
+    "like_count": 19,
+    "repost_count": 2
+  },
+  {
+    "uri": "at://did:plc:hwa75yj3fmcbaimyxc5dlvgi/app.bsky.feed.post/3mxtzgeqtqc2z",
+    "author_handle": "mangycarface.bsky.social",
+    "author_name": "mcf",
+    "author_avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hwa75yj3fmcbaimyxc5dlvgi/bafkreiaq7vd53ywnydchfu4sobs2xtxujcqgf5u4h5dbhknvzoewtnegba",
+    "text": "guy who has only posted about \"of the devil\" seeing a new video game topic: Getting a lot of \"of the devil\" vibes from this...",
+    "images": [],
+    "video_url": null,
+    "created_at": "2026-10-14T16:58:54.990Z",
+    "like_count": 36,
+    "repost_count": 9
+  },
+  {
     "uri": "at://did:plc:f3sxv6f7a2sztbqw5m3rro3o/app.bsky.feed.post/3mxujz7akq22x",
     "author_handle": "brantopia.bsky.social",
     "author_name": "\u200dbran",
